@@ -3,8 +3,24 @@
 User-agent: *
 Allow: /
 
+# AI 搜索引擎爬虫 - 明确允许
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
 # 指向网站地图位置
-Sitemap: https://server.yzy15.dpdns.org/sitemap.xml
+Sitemap: https://eftserver.yzy15.dpdns.org/sitemap.xml
 
 # 优化爬取效率
 Crawl-delay: 1

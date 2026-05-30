@@ -1,26 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- 首页 -->
   <url>
-    <loc>https://server.yzy15.dpdns.org/</loc>
-    <lastmod>2026-02-22</lastmod>
+    <loc>https://eftserver.yzy15.dpdns.org/</loc>
+    <lastmod>2026-05-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
-  
-  <!-- 3.11版本指南 -->
   <url>
-    <loc>https://server.yzy15.dpdns.org/guides/guide-3.11.html</loc>
-    <lastmod>2026-02-22</lastmod>
+    <loc>https://eftserver.yzy15.dpdns.org/guides/guide-3.11.html</loc>
+    <lastmod>2026-05-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  
-  <!-- 服务器规则 -->
   <url>
-    <loc>https://server.yzy15.dpdns.org/policy.html</loc>
-    <lastmod>2026-02-22</lastmod>
+    <loc>https://eftserver.yzy15.dpdns.org/guides/guide-beginner-0.16.html</loc>
+    <lastmod>2026-05-31</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://eftserver.yzy15.dpdns.org/EULA.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
 </urlset>

@@ -16,7 +16,7 @@
 ## 服务器地址
 ### 3.11版本服务器（稳定版）
 ```
-http://server.yzy15.dpdns.org:26969
+http://eftserver.yzy15.dpdns.org:26969
 ```
 
 
@@ -39,7 +39,7 @@ http://server.yzy15.dpdns.org:26969
 ## 安装指南
 
 ### 方法一：使用官方提供的完整客户端
-1. 访问[官方网站](http://server.yzy15.dpdns.org:26969)
+1. 访问[官方网站](http://eftserver.yzy15.dpdns.org:26969)
 2. 点击"立即加入"按钮
 3. 根据您的电脑配置选择适合的版本：
    - 3.11.4版本（稳定版）：稳定运行，经过充分测试，适合大多数玩家
