@@ -74,7 +74,7 @@
         },
         "datePublished": "2026-01-17",
         "dateModified": "2026-04-19",
-        "articleBody": "详细的逃离塔科夫3.11版本安装指南，包括进群查看群公告和群精华、安装游戏本体、配置Astral连接器和运行库的步骤。"
+        "articleBody": "详细的逃离塔科夫3.11版本安装指南，包括进群查看群公告和群精华、安装游戏本体、配置EasyTier连接器和运行库的步骤。"
       }
     </script>
     <script src="https://cdn.tailwindcss.com"></script>
@@ -185,7 +185,7 @@
             "name": "如何安装逃离塔科夫3.11版本？",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "加入QQ群1034718897获取资源，安装运行库，下载3.11版本游戏本体，配置Astral连接器，运行Auto Install，配置启动器URL，创建角色即可开始游戏。"
+              "text": "加入QQ群1034718897获取资源，安装运行库，下载3.11版本游戏本体，配置EasyTier连接器，运行Auto Install，配置启动器URL，创建角色即可开始游戏。"
             }
           },
           {
@@ -193,7 +193,7 @@
             "name": "无法连接到服务器怎么办？",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "确认服务器是否开放，检查网络连接和防火墙设置，确保Astral已成功连接且URL地址已正确配置。如仍有问题请联系群管理员。"
+              "text": "确认服务器是否开放，检查网络连接和防火墙设置，确保EasyTier已成功连接且URL地址已正确配置。如仍有问题请联系群管理员。"
             }
           },
           {
@@ -201,7 +201,7 @@
             "name": "游戏版本不兼容怎么办？",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "确保使用SPT-AKI 3.11版本，正确配置Astral连接器和启动器设置。如仍无法连接请检查群公告是否有更新。"
+              "text": "确保使用SPT-AKI 3.11版本，正确配置EasyTier连接器和启动器设置。如仍无法连接请检查群公告是否有更新。"
             }
           },
           {
@@ -262,7 +262,7 @@
           <ul class="text-light/80 space-y-1 text-sm">
             <li>加入QQ群 1034718897 获取所有安装资源</li>
             <li>
-              安装运行库（GRL Package）→ 下载3.11游戏本体 → 配置Astral连接器
+              安装运行库（GRL Package）→ 下载3.11游戏本体 → 配置EasyTier连接器
             </li>
             <li>运行Auto Install → 配置启动器URL → 创建角色开始游戏</li>
             <li>严禁使用作弊工具和选择Unheard（蓝边）账户版本</li>
@@ -302,6 +302,66 @@
 
           <!-- 步骤列表 -->
           <div class="space-y-12">
+            <!-- 服务器地址 -->
+            <div class="bg-glass rounded-2xl p-6 border border-primary/30">
+              <h3 class="text-xl font-semibold mb-2 text-accent">
+                📋 服务器地址
+              </h3>
+              <p class="text-light/70 text-sm mb-4">
+                连接地址请优先使用<strong class="text-primary"
+                  >公网主地址</strong
+                >。如果主地址无法连接，再尝试备用地址或内网地址。
+              </p>
+              <div class="space-y-3">
+                <div class="bg-white/5 rounded-lg p-4">
+                  <div class="flex flex-wrap items-center gap-2 mb-1">
+                    <span class="font-semibold text-primary text-sm"
+                      >公网主地址</span
+                    >
+                    <span
+                      class="text-xs bg-primary/20 text-primary px-2 py-0.5 rounded"
+                      >推荐</span
+                    >
+                  </div>
+                  <code class="text-light/90 text-sm break-all"
+                    >【待更新：新公网地址】</code
+                  >
+                </div>
+                <div class="bg-white/5 rounded-lg p-4">
+                  <div class="flex flex-wrap items-center gap-2 mb-1">
+                    <span class="font-semibold text-accent text-sm"
+                      >公网备用地址</span
+                    >
+                    <span
+                      class="text-xs bg-accent/20 text-accent px-2 py-0.5 rounded"
+                      >主地址不通时使用</span
+                    >
+                  </div>
+                  <code class="text-light/90 text-sm break-all"
+                    >https://202.189.23.245:26969</code
+                  >
+                </div>
+                <div class="bg-white/5 rounded-lg p-4">
+                  <div class="flex flex-wrap items-center gap-2 mb-1">
+                    <span class="font-semibold text-secondary text-sm"
+                      >内网地址</span
+                    >
+                    <span
+                      class="text-xs bg-secondary/20 text-secondary px-2 py-0.5 rounded"
+                      >需先连上 EasyTier</span
+                    >
+                  </div>
+                  <code class="text-light/90 text-sm break-all"
+                    >【待更新：EasyTier 内网地址】</code
+                  >
+                </div>
+              </div>
+              <p class="text-light/60 text-xs mt-4">
+                使用内网地址前，必须先按下面「步骤 4」配置好
+                EasyTier，否则会连不上服务器。
+              </p>
+            </div>
+
             <!-- 步骤 1 -->
             <div class="relative">
               <div class="flex items-start">
@@ -417,36 +477,131 @@
                 </div>
                 <div class="flex-1">
                   <h3 class="text-2xl font-semibold mb-4">
-                    配置 Astral 连接器
+                    配置 EasyTier 连接器
                     <span
                       class="text-sm bg-yellow-500/80 text-white px-2 py-0.5 rounded ml-2"
-                      >需进群获取</span
+                      >必装</span
                     >
                   </h3>
                   <p class="text-light/70 mb-6">
-                    在群文件中找到"联机必备"文件夹，里面有Astral（稳定连接服务器必备）。<br /><span
+                    YZY社区服使用 EasyTier 组网。EasyTier
+                    是一款去中心化组网工具，会在你的电脑和服务器之间建立一条虚拟局域网通道，延迟更低、稳定性更好。<br /><span
                       class="text-yellow-400 font-medium"
-                      >⚠
-                      ASTRAL连接所需所有配置文件均在群文件中，请先加入QQ群获取。</span
+                      >⚠ 必须先让 EasyTier
+                      连上虚拟网络，再启动游戏，否则会连不上服务器。</span
                     >
                   </p>
-                  <div class="bg-white/5 p-4 rounded-lg">
+                  <div class="bg-white/5 p-4 rounded-lg mb-4">
+                    <h4 class="font-semibold text-accent mb-2">
+                      第一步：下载并安装
+                    </h4>
                     <ol
                       class="list-decimal list-inside space-y-2 text-light/80"
                     >
-                      <li>在群文件中找到"联机必备"文件夹</li>
-                      <li>下载 Astral 文件夹内的配置链接和启动器</li>
-                      <li>下载 Astral 软件主程序</li>
-                      <li>打开 Astral 软件，找到右下角的剪贴板图标</li>
                       <li>
-                        点击剪贴板图标，会弹出一个框让你粘贴配置链接或房间号
+                        下载
+                        <a
+                          href="https://github.com/EasyTier/EasyTier/releases"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          class="text-primary hover:underline"
+                          >EasyTier 官方安装包</a
+                        >
+                        （Windows 选择
+                        <strong>GUI 图形版</strong>，解压即用，无需安装）
                       </li>
-                      <li>将配置链接粘贴进去，点击确定</li>
                       <li>
-                        选择房间：<strong>相位剧场（Phase Theater）</strong>
+                        或使用游戏联机启动器
+                        <a
+                          href="https://github.com/EasyTier/EasytierGame/releases"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          class="text-primary hover:underline"
+                          >EasyTierGame</a
+                        >，自带内核、解压即用
                       </li>
-                      <li>返回 Astral 首页，点击<strong>连接</strong></li>
+                      <li>
+                        下载完成后解压到任意目录，例如 <code>D:\EasyTier</code>
+                      </li>
                     </ol>
+                  </div>
+                  <div class="bg-white/5 p-4 rounded-lg mb-4">
+                    <h4 class="font-semibold text-accent mb-2">
+                      第二步：下载本服配置文件
+                    </h4>
+                    <ol
+                      class="list-decimal list-inside space-y-2 text-light/80"
+                    >
+                      <li>
+                        下载配置文件
+                        <a
+                          href="../easytier/Eft-yzy.toml"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          class="text-primary hover:underline"
+                          >Eft-yzy.toml</a
+                        >
+                      </li>
+                      <li>
+                        用记事本打开该文件，删除
+                        <code
+                          >instance_id =
+                          "6467e294-0144-47aa-9005-c1b693aad3b8"</code
+                        >
+                        这一整行
+                      </li>
+                      <li class="text-yellow-400">
+                        ⚠
+                        这一行必须删除！这是服务器本机的节点编号，每个人都不一样，删掉后软件会自动为你生成一个专属编号。
+                      </li>
+                      <li>
+                        其余内容<strong>不要改动</strong>，保存为
+                        <code>config.toml</code>
+                      </li>
+                    </ol>
+                  </div>
+                  <div class="bg-white/5 p-4 rounded-lg mb-4">
+                    <h4 class="font-semibold text-accent mb-2">
+                      第三步：启动并连接
+                    </h4>
+                    <ol
+                      class="list-decimal list-inside space-y-2 text-light/80"
+                    >
+                      <li>
+                        运行 EasyTier，在配置页面选择「使用自定义配置文件」
+                      </li>
+                      <li>选中刚才保存的 <code>config.toml</code></li>
+                      <li>
+                        点击<strong>启动</strong>，需要允许 Windows
+                        防火墙弹窗（选择「允许访问」）
+                      </li>
+                      <li>等待连接成功，软件会自动显示分配到的内网IP</li>
+                      <li>确认已连上服务器后，再进行下一步启动游戏</li>
+                    </ol>
+                  </div>
+                  <div class="bg-white/5 p-4 rounded-lg">
+                    <h4 class="font-semibold text-accent mb-2">
+                      进阶：命令行方式启动
+                    </h4>
+                    <p class="text-light/80 text-sm mb-2">
+                      如果图形界面连接异常，可以用管理员身份打开命令行，进入
+                      EasyTier 目录后执行：
+                    </p>
+                    <pre
+                      class="bg-black/30 rounded p-3 text-xs text-light/90 overflow-x-auto"
+                    >
+easytier-core -c config.toml</pre>
+                    <p class="text-light/80 text-sm mt-2">
+                      连接状态可以用以下命令查看：
+                    </p>
+                    <pre
+                      class="bg-black/30 rounded p-3 text-xs text-light/90 overflow-x-auto"
+                    >
+easytier-cli peer</pre>
+                    <p class="text-light/80 text-sm mt-2">
+                      看到服务器节点显示 <code>p2p</code>
+                      或延迟数值，就说明组网已经通了。
+                    </p>
                   </div>
                 </div>
               </div>
@@ -520,7 +675,10 @@
                         开启底下的
                         <strong>Developer Settings（开发者设置）</strong>
                       </li>
-                      <li>在开发者设置中把 URL 地址改成群文件里提供的 URL</li>
+                      <li>
+                        在开发者设置中把 URL 地址改成上文「📋
+                        服务器地址」中的地址，公网主地址不通时可改用备用地址或内网地址
+                      </li>
                       <li>点击右上角的小箭头<strong>返回</strong>主界面</li>
                     </ol>
                   </div>
@@ -603,7 +761,7 @@
                 </h4>
                 <p class="text-light/80">
                   首先确认服务器是否处于开放时间，然后检查您的网络连接和防火墙设置。确保
-                  Astral 已成功连接，URL
+                  EasyTier 已成功连接并显示内网IP，URL
                   地址已正确配置。如果问题依然存在，请尝试联系群管理员寻求帮助。
                 </p>
               </div>
@@ -612,7 +770,7 @@
                   游戏版本不兼容怎么办？
                 </h4>
                 <p class="text-light/80">
-                  确保您使用的是 SPT-AKI 3.11 版本，并已正确配置 Astral
+                  确保您使用的是 SPT-AKI 3.11 版本，并已正确配置 EasyTier
                   连接器和启动器设置。如果仍然无法连接，请检查群公告是否有更新。
                 </p>
               </div>

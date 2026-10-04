@@ -341,8 +341,8 @@
           },
           {
             "@type": "HowToStep",
-            "name": "配置Astral连接器",
-            "text": "配置Astral连接器连接到服务器"
+            "name": "配置EasyTier连接器",
+            "text": "配置EasyTier连接器连接到服务器"
           },
           {
             "@type": "HowToStep",
@@ -5061,37 +5061,101 @@
           🔌 服务器连接指南
         </h3>
         <p class="text-light/70 mb-6">
-          YZY社区服支持双线路自由选择，连接方式如下：
+          YZY社区服提供三种连接地址，请优先使用<strong class="text-primary"
+            >公网主地址</strong
+          >；主地址不通时再尝试备用地址或内网地址。
         </p>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
           <div class="bg-white/5 rounded-xl p-5 border border-primary/30">
-            <h4 class="font-semibold text-primary mb-3">🌐 公网IP直连</h4>
-            <p class="text-light/80 text-sm mb-3">
-              通过公网IP直接连接服务器，无需额外软件，稳定可靠。
-            </p>
-            <div class="bg-white/5 rounded-lg p-3 text-sm">
-              <span class="text-light/50">官网地址：</span>
-              <a
-                href="https://eftserver.yzy15.dpdns.org"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="text-primary"
-                >eftserver.yzy15.dpdns.org</a
+            <div class="flex flex-wrap items-center gap-2 mb-2">
+              <h4 class="font-semibold text-primary">🌐 公网主地址</h4>
+              <span
+                class="text-xs bg-primary/20 text-primary px-2 py-0.5 rounded"
+                >推荐</span
               >
             </div>
+            <p class="text-light/80 text-sm mb-3">
+              直接连接公网服务器，无需安装任何软件。
+            </p>
+            <code class="text-light/90 text-sm break-all"
+              >【待更新：新公网地址】</code
+            >
           </div>
           <div class="bg-white/5 rounded-xl p-5 border border-accent/30">
-            <h4 class="font-semibold text-accent mb-3">⚡ ASTRAL专线</h4>
+            <h4 class="font-semibold text-accent mb-2">🛟 公网备用地址</h4>
             <p class="text-light/80 text-sm mb-3">
-              通过ASTRAL一键联机，延迟更低、稳定性拉满，推荐大多数玩家使用。
+              主地址无法连接时使用，同为公网直连，无需额外软件。
             </p>
-            <div class="bg-white/5 rounded-lg p-3 text-sm">
-              <span class="text-light/50">使用方式：</span>
-              <span class="text-accent"
-                >启动ASTRAL → 连接服务器 → 启动游戏</span
-              >
+            <code class="text-light/90 text-sm break-all"
+              >https://202.189.23.245:26969</code
+            >
+          </div>
+          <div class="bg-white/5 rounded-xl p-5 border border-secondary/30">
+            <h4 class="font-semibold text-secondary mb-2">🔗 内网地址</h4>
+            <p class="text-light/80 text-sm mb-3">
+              走 EasyTier 虚拟内网，延迟最低，但需先配置 EasyTier。
+            </p>
+            <code class="text-light/90 text-sm break-all"
+              >【待更新：EasyTier 内网地址】</code
+            >
+          </div>
+        </div>
+        <div class="bg-white/5 rounded-xl p-5 border border-primary/30 mb-6">
+          <div class="flex items-start mb-3">
+            <i class="fa fa-network-wired text-primary text-xl mt-1 mr-3"></i>
+            <div>
+              <h4 class="font-semibold text-primary mb-2">
+                EasyTier 内网组网教程
+              </h4>
+              <p class="text-light/80 text-sm">
+                EasyTier
+                是一款去中心化组网工具，会在你的电脑和服务器之间建立一条虚拟局域网通道。相比公网直连，延迟更低、抖动更小，复杂网络环境下也更容易连通。
+              </p>
             </div>
           </div>
+          <ol class="list-decimal list-inside space-y-2 text-light/80 text-sm">
+            <li>
+              下载并解压
+              <a
+                href="https://github.com/EasyTier/EasyTier/releases"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-primary hover:underline"
+                >EasyTier 官方安装包</a
+              >
+              （Windows 选 <strong>GUI 图形版</strong>，解压即用）
+            </li>
+            <li>
+              下载本服配置文件
+              <a
+                href="../easytier/Eft-yzy.toml"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-primary hover:underline"
+                >Eft-yzy.toml</a
+              >
+            </li>
+            <li>
+              用记事本打开配置，删除
+              <code class="text-xs"
+                >instance_id = "6467e294-0144-47aa-9005-c1b693aad3b8"</code
+              >
+              这一整行（这是服务器本机编号，每个人都不同，删掉后软件会自动生成）
+            </li>
+            <li>其余内容不要改动，保存为 <code>config.toml</code></li>
+            <li>
+              启动 EasyTier，选择「使用自定义配置文件」并选中该
+              <code>config.toml</code>，点击<strong>启动</strong>
+            </li>
+            <li>
+              弹出防火墙提示时选择<strong>允许访问</strong>，等待连接成功显示内网IP
+            </li>
+            <li>连上后即可使用上面「内网地址」进入服务器</li>
+          </ol>
+          <p class="text-yellow-400 text-xs mt-3">
+            ⚠ 连接顺序很重要：先启动 EasyTier
+            并确认连上，再启动游戏。反过来会连不上服务器。
+          </p>
         </div>
         <div class="bg-white/5 rounded-xl p-5">
           <h4 class="font-semibold text-primary mb-2">🔄 全自动更新同步</h4>
@@ -5195,8 +5259,10 @@
         <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
           <div class="bg-white/5 rounded-xl p-4 text-center">
             <i class="fa fa-server text-2xl text-primary mb-2"></i>
-            <h4 class="font-semibold text-primary text-sm">双线路自由选择</h4>
-            <p class="text-light/70 text-xs">公网IP直连 + ASTRAL专线</p>
+            <h4 class="font-semibold text-primary text-sm">多线路自由选择</h4>
+            <p class="text-light/70 text-xs">
+              公网主地址 + 备用地址 + EasyTier 内网
+            </p>
           </div>
           <div class="bg-white/5 rounded-xl p-4 text-center">
             <i class="fa fa-refresh text-2xl text-accent mb-2"></i>
@@ -5342,7 +5408,7 @@
           <div class="bg-white/5 rounded-xl p-5">
             <h4 class="font-semibold text-primary mb-2">🔌 连接问题</h4>
             <p class="text-light/80 text-sm">
-              无法连接到服务器时，首先检查Astral是否已成功连接。确认Astral显示"已连接"状态后，再尝试启动游戏。如果Astral连接失败，尝试重新启动Astral软件或检查网络连接。确保没有防火墙或杀毒软件阻止Astral的网络访问。
+              无法连接到服务器时，首先检查EasyTier是否已成功连接。确认EasyTier显示已连接状态（分配到内网IP）后，再尝试启动游戏。如果EasyTier连接失败，尝试重新启动EasyTier软件或检查网络连接。确保没有防火墙或杀毒软件阻止EasyTier的网络访问。
             </p>
           </div>
           <div class="bg-white/5 rounded-xl p-5">
@@ -6028,7 +6094,10 @@
               <ol
                 class="space-y-2 text-light/80 text-sm list-decimal list-inside"
               >
-                <li>房主与成员均通过ASTRAL连接服务器</li>
+                <li>
+                  房主与成员均通过同一线路连接服务器（公网主地址或 EasyTier
+                  内网）
+                </li>
                 <li>房主进入游戏选择地图与时间</li>
                 <li>好友进入同一地图与时间即可组队</li>
               </ol>

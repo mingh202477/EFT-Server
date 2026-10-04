@@ -1,0 +1,84 @@
+instance_name = "eft-yzy"
+instance_id = "6467e294-0144-47aa-9005-c1b693aad3b8"
+ipv6_public_addr_auto = true
+dhcp = true
+listeners = [
+    "tcp://0.0.0.0:11010",
+    "udp://0.0.0.0:11010",
+]
+
+[network_identity]
+network_name = "eft-yzy"
+network_secret = "eft-yzy"
+
+# 日本多协议
+[[peer]]
+uri = "tcp://161.33.207.13:51010"
+[[peer]]
+uri = "udp://161.33.207.13:51010"
+[[peer]]
+uri = "ws://161.33.207.13:51011/"
+[[peer]]
+uri = "wss://161.33.207.13:51012/"
+[[peer]]
+uri = "quic://161.33.207.13:51012"
+[[peer]]
+uri = "wg://161.33.207.13:51011"
+[[peer]]
+uri = "faketcp://161.33.207.13:51013"
+
+# 香港
+[[peer]]
+uri = "tcp://et-hk.clickor.click:11010"
+[[peer]]
+uri = "udp://et-hk.clickor.click:11010"
+[[peer]]
+uri = "ws://et-hk.clickor.click:11011/"
+[[peer]]
+uri = "wss://et-hk.clickor.click:11012/"
+
+# 美国
+[[peer]]
+uri = "tcp://us01.225284.xyz:11010"
+[[peer]]
+uri = "udp://us01.225284.xyz:11010"
+[[peer]]
+uri = "tcp://easytier-us.slarker.me:11010"
+[[peer]]
+uri = "wss://easytier-us.slarker.me:11011/"
+
+# 上海
+[[peer]]
+uri = "tcp://sh.vomiku.com:7910"
+[[peer]]
+uri = "udp://sh.vomiku.com:7910"
+[[peer]]
+uri = "ws://sh.vomiku.com:7911/"
+[[peer]]
+uri = "wss://sh.vomiku.com:7912/"
+
+# 其他
+[[peer]]
+uri = "tcp://8.148.29.206:11010"
+[[peer]]
+uri = "tcp://39.108.52.138:11010"
+
+# 官方相关（经常挂，但留着打洞）
+[[peer]]
+uri = "tcp://public.easytier.cn:11010"
+[[peer]]
+uri = "udp://public.easytier.cn:11010"
+[[peer]]
+uri = "tcp://public.easytier.top:11010"
+[[peer]]
+uri = "tcp://public2.easytier.cn:54321"
+
+[flags]
+accept_dns = true
+enable_kcp_proxy = true
+enable_quic_proxy = true
+enable_udp_broadcast_relay = true
+latency_first = true
+proxy_forward_by_system = true
+relay_all_peer_rpc = true
+use_smoltcp = true
