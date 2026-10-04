@@ -1,446 +1,733 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-5PX95NVC');</script>
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-5PX95NVC");
+    </script>
     <!-- End Google Tag Manager -->
     <title>逃离塔科夫3.11版本安装指南 - 进群内查看详情</title>
-    <meta name="description" content="详细的逃离塔科夫3.11版本安装指南，稳定运行，经过充分测试，适合大多数玩家，包括客户端安装、模组配置和服务器连接步骤。">
-    <meta name="keywords" content="逃离塔科夫, 3.11版本, 安装指南, 稳定版, 服务器连接, SPT-AKI, 客户端安装">
-    <meta name="author" content="EFT Server Team">
-    <meta name="robots" content="index, follow">
-    <meta name="theme-color" content="#4facfe">
-    <link rel="canonical" href="https://eftserver.yzy15.dpdns.org/guides/guide-3.11.html">
-    <link rel="alternate" hreflang="zh-CN" href="https://eftserver.yzy15.dpdns.org/guides/guide-3.11.html">
+    <meta
+      name="description"
+      content="详细的逃离塔科夫3.11版本安装指南，稳定运行，经过充分测试，适合大多数玩家，包括客户端安装、模组配置和服务器连接步骤。"
+    />
+    <meta
+      name="keywords"
+      content="逃离塔科夫, 3.11版本, 安装指南, 稳定版, 服务器连接, SPT-AKI, 客户端安装"
+    />
+    <meta name="author" content="EFT Server Team" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#4facfe" />
+    <link
+      rel="canonical"
+      href="https://eftserver.yzy15.dpdns.org/guides/guide-3.11.html"
+    />
+    <link
+      rel="alternate"
+      hreflang="zh-CN"
+      href="https://eftserver.yzy15.dpdns.org/guides/guide-3.11.html"
+    />
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FRM7CNLEQT"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-FRM7CNLEQT"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-      gtag('config', 'G-FRM7CNLEQT');
+      gtag("config", "G-FRM7CNLEQT");
     </script>
     <!-- 结构化数据 -->
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Article",
-      "headline": "逃离塔科夫3.11版本安装指南 - 进群内查看详情",
-      "description": "详细的逃离塔科夫3.11版本安装指南，稳定运行，经过充分测试，适合大多数玩家，包括客户端安装、模组配置和服务器连接步骤。",
-      "image": "https://eftserver.yzy15.dpdns.org/favicon.ico",
-      "author": {
-        "@type": "Organization",
-        "name": "EFT Server Team"
-      },
-      "publisher": {
-        "@type": "Organization",
-        "name": "EFT Server",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://eftserver.yzy15.dpdns.org/favicon.ico"
-        }
-      },
-      "datePublished": "2026-01-17",
-      "dateModified": "2026-04-19",
-      "articleBody": "详细的逃离塔科夫3.11版本安装指南，包括进群查看群公告和群精华、安装游戏本体、配置Astral连接器和运行库的步骤。"
-    }
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "逃离塔科夫3.11版本安装指南 - 进群内查看详情",
+        "description": "详细的逃离塔科夫3.11版本安装指南，稳定运行，经过充分测试，适合大多数玩家，包括客户端安装、模组配置和服务器连接步骤。",
+        "image": "https://eftserver.yzy15.dpdns.org/favicon.ico",
+        "author": {
+          "@type": "Organization",
+          "name": "EFT Server Team"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "EFT Server",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://eftserver.yzy15.dpdns.org/favicon.ico"
+          }
+        },
+        "datePublished": "2026-01-17",
+        "dateModified": "2026-04-19",
+        "articleBody": "详细的逃离塔科夫3.11版本安装指南，包括进群查看群公告和群精华、安装游戏本体、配置Astral连接器和运行库的步骤。"
+      }
     </script>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
     <style>
-        :root {
-            --font-inter: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans SC', sans-serif;
-        }
-        body { font-family: var(--font-inter); }
-        .font-loaded body { font-family: 'Inter', var(--font-inter); }
+      :root {
+        --font-inter:
+          "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, "Noto Sans SC", sans-serif;
+      }
+      body {
+        font-family: var(--font-inter);
+      }
+      .font-loaded body {
+        font-family: "Inter", var(--font-inter);
+      }
 
-        body {
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-            color: #f0f0f0;
-            min-height: 100vh;
-        }
+      body {
+        background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+        color: #f0f0f0;
+        min-height: 100vh;
+      }
 
-        .bg-glass {
-            background: rgba(255, 255, 255, 0.05);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-        }
+      .bg-glass {
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+      }
 
-        .text-primary {
-            color: #4facfe;
-        }
+      .text-primary {
+        color: #4facfe;
+      }
 
-        .text-accent {
-            color: #00f2fe;
-        }
+      .text-accent {
+        color: #00f2fe;
+      }
 
-        .border-white-10 {
-            border-color: rgba(255, 255, 255, 0.1);
-        }
+      .border-white-10 {
+        border-color: rgba(255, 255, 255, 0.1);
+      }
     </style>
     <script>
-    (function() {
+      (function () {
         var FONT_LOAD_TIMEOUT = 3000;
-        var FONT_FAMILY = 'Inter:wght@300;400;500;600;700';
+        var FONT_FAMILY = "Inter:wght@300;400;500;600;700";
         var FONT_SOURCES = [
-            { name: 'cloudflare', css: 'https://fonts.googleapis.com/css2?family=' + FONT_FAMILY + '&display=swap' },
-            { name: 'china-mirror', css: 'https://fonts.font.im/css2?family=' + FONT_FAMILY + '&display=swap' }
+          {
+            name: "cloudflare",
+            css:
+              "https://fonts.googleapis.com/css2?family=" +
+              FONT_FAMILY +
+              "&display=swap",
+          },
+          {
+            name: "china-mirror",
+            css:
+              "https://fonts.font.im/css2?family=" +
+              FONT_FAMILY +
+              "&display=swap",
+          },
         ];
         var fontLoaded = false;
         var fontLink = null;
 
         function loadFont(sourceIndex) {
-            if (sourceIndex >= FONT_SOURCES.length || fontLoaded) return;
-            var source = FONT_SOURCES[sourceIndex];
-            fontLink = document.createElement('link');
-            fontLink.rel = 'stylesheet';
-            fontLink.href = source.css;
-            fontLink.crossOrigin = 'anonymous';
-            
-            var timeoutId = setTimeout(function() {
-                if (!fontLoaded) {
-                    console.warn('[Font] ' + source.name + ' timeout');
-                    if (fontLink && fontLink.parentNode) fontLink.parentNode.removeChild(fontLink);
-                    loadFont(sourceIndex + 1);
-                }
-            }, FONT_LOAD_TIMEOUT);
+          if (sourceIndex >= FONT_SOURCES.length || fontLoaded) return;
+          var source = FONT_SOURCES[sourceIndex];
+          fontLink = document.createElement("link");
+          fontLink.rel = "stylesheet";
+          fontLink.href = source.css;
+          fontLink.crossOrigin = "anonymous";
 
-            fontLink.onload = function() {
-                clearTimeout(timeoutId);
-                if (!fontLoaded) {
-                    fontLoaded = true;
-                    document.documentElement.classList.add('font-loaded');
-                }
-            };
-            fontLink.onerror = function() {
-                clearTimeout(timeoutId);
-                loadFont(sourceIndex + 1);
-            };
-            document.head.appendChild(fontLink);
+          var timeoutId = setTimeout(function () {
+            if (!fontLoaded) {
+              console.warn("[Font] " + source.name + " timeout");
+              if (fontLink && fontLink.parentNode)
+                fontLink.parentNode.removeChild(fontLink);
+              loadFont(sourceIndex + 1);
+            }
+          }, FONT_LOAD_TIMEOUT);
+
+          fontLink.onload = function () {
+            clearTimeout(timeoutId);
+            if (!fontLoaded) {
+              fontLoaded = true;
+              document.documentElement.classList.add("font-loaded");
+            }
+          };
+          fontLink.onerror = function () {
+            clearTimeout(timeoutId);
+            loadFont(sourceIndex + 1);
+          };
+          document.head.appendChild(fontLink);
         }
         loadFont(0);
-    })();
+      })();
     </script>
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "如何安装逃离塔科夫3.11版本？",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "加入QQ群1034718897获取资源，安装运行库，下载3.11版本游戏本体，配置Astral连接器，运行Auto Install，配置启动器URL，创建角色即可开始游戏。"
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "如何安装逃离塔科夫3.11版本？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "加入QQ群1034718897获取资源，安装运行库，下载3.11版本游戏本体，配置Astral连接器，运行Auto Install，配置启动器URL，创建角色即可开始游戏。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "无法连接到服务器怎么办？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "确认服务器是否开放，检查网络连接和防火墙设置，确保Astral已成功连接且URL地址已正确配置。如仍有问题请联系群管理员。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "游戏版本不兼容怎么办？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "确保使用SPT-AKI 3.11版本，正确配置Astral连接器和启动器设置。如仍无法连接请检查群公告是否有更新。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "可以同时玩线上版和离线版吗？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "不可以。不要同时开着线上和离线版一起玩，不要使用修改过的客户端玩线上版。如果弹出是否更新mod，务必选择Continue，否则将被服务器封禁。"
+            }
           }
-        },
-        {
-          "@type": "Question",
-          "name": "无法连接到服务器怎么办？",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "确认服务器是否开放，检查网络连接和防火墙设置，确保Astral已成功连接且URL地址已正确配置。如仍有问题请联系群管理员。"
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "游戏版本不兼容怎么办？",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "确保使用SPT-AKI 3.11版本，正确配置Astral连接器和启动器设置。如仍无法连接请检查群公告是否有更新。"
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "可以同时玩线上版和离线版吗？",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "不可以。不要同时开着线上和离线版一起玩，不要使用修改过的客户端玩线上版。如果弹出是否更新mod，务必选择Continue，否则将被服务器封禁。"
-          }
-        }
-      ]
-    }
+        ]
+      }
     </script>
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "首页",
-          "item": "https://eftserver.yzy15.dpdns.org/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "3.11版本安装指南",
-          "item": "https://eftserver.yzy15.dpdns.org/guides/guide-3.11.html"
-        }
-      ]
-    }
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "首页",
+            "item": "https://eftserver.yzy15.dpdns.org/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "3.11版本安装指南",
+            "item": "https://eftserver.yzy15.dpdns.org/guides/guide-3.11.html"
+          }
+        ]
+      }
     </script>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5PX95NVC"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-5PX95NVC"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <div class="container mx-auto px-4 py-16">
-        <div class="text-center mb-12">
-            <h1 class="text-4xl font-bold mb-4 text-primary">3.11版本安装指南 <span class="text-sm bg-blue-500 text-white px-2 py-1 rounded">稳定版</span></h1>
-            <div class="bg-green-500/10 border-l-4 border-green-500 p-4 rounded-lg mb-6 max-w-2xl mx-auto text-left">
-                <p class="font-bold text-green-400 mb-2">TL;DR 安装要点</p>
-                <ul class="text-light/80 space-y-1 text-sm">
-                    <li>加入QQ群 1034718897 获取所有安装资源</li>
-                    <li>安装运行库（GRL Package）→ 下载3.11游戏本体 → 配置Astral连接器</li>
-                    <li>运行Auto Install → 配置启动器URL → 创建角色开始游戏</li>
-                    <li>严禁使用作弊工具和选择Unheard（蓝边）账户版本</li>
-                </ul>
+      <div class="text-center mb-12">
+        <h1 class="text-4xl font-bold mb-4 text-primary">
+          3.11版本安装指南
+          <span class="text-sm bg-blue-500 text-white px-2 py-1 rounded"
+            >稳定版</span
+          >
+        </h1>
+        <div
+          class="bg-green-500/10 border-l-4 border-green-500 p-4 rounded-lg mb-6 max-w-2xl mx-auto text-left"
+        >
+          <p class="font-bold text-green-400 mb-2">TL;DR 安装要点</p>
+          <ul class="text-light/80 space-y-1 text-sm">
+            <li>加入QQ群 1034718897 获取所有安装资源</li>
+            <li>
+              安装运行库（GRL Package）→ 下载3.11游戏本体 → 配置Astral连接器
+            </li>
+            <li>运行Auto Install → 配置启动器URL → 创建角色开始游戏</li>
+            <li>严禁使用作弊工具和选择Unheard（蓝边）账户版本</li>
+          </ul>
+        </div>
+        <p class="text-light/70 max-w-2xl mx-auto">
+          稳定运行，经过充分测试，适合大多数玩家
+        </p>
+      </div>
+
+      <div
+        class="max-w-4xl mx-auto bg-glass rounded-2xl overflow-hidden shadow-2xl border border-white-10"
+      >
+        <div class="p-6 md:p-8">
+          <!-- 警告区域 -->
+          <div
+            class="mb-8 bg-red-500/10 border-2 border-red-500/50 rounded-xl p-4"
+          >
+            <div class="flex items-start">
+              <i
+                class="fa fa-exclamation-triangle text-red-500 text-2xl mt-1 mr-3"
+              ></i>
+              <div>
+                <h4 class="font-bold text-red-500 text-lg mb-2">⚠️ 重要警告</h4>
+                <p class="text-light/80 font-medium mb-2">
+                  1. 服务器<span class="text-red-500 font-bold">严禁</span
+                  >使用任何作弊软件！使用作弊者将被永久封禁！
+                </p>
+                <p class="text-light/80 font-medium">
+                  2. 服务器<span class="text-red-500 font-bold">严禁</span
+                  >在注册时选择
+                  Unheard（蓝边）账户版本！蓝边是账户版本，不是游戏客户端！使用蓝边账户版本将被永久封禁！
+                </p>
+              </div>
             </div>
-            <p class="text-light/70 max-w-2xl mx-auto">稳定运行，经过充分测试，适合大多数玩家</p>
-        </div>
+          </div>
 
-        <div class="max-w-4xl mx-auto bg-glass rounded-2xl overflow-hidden shadow-2xl border border-white-10">
-            <div class="p-6 md:p-8">
-                <!-- 警告区域 -->
-                <div class="mb-8 bg-red-500/10 border-2 border-red-500/50 rounded-xl p-4">
-                    <div class="flex items-start">
-                        <i class="fa fa-exclamation-triangle text-red-500 text-2xl mt-1 mr-3"></i>
-                        <div>
-                            <h4 class="font-bold text-red-500 text-lg mb-2">⚠️ 重要警告</h4>
-                            <p class="text-light/80 font-medium mb-2">1. 服务器<span class="text-red-500 font-bold">严禁</span>使用任何作弊软件！使用作弊者将被永久封禁！</p>
-                            <p class="text-light/80 font-medium">2. 服务器<span class="text-red-500 font-bold">严禁</span>在注册时选择 Unheard（蓝边）账户版本！蓝边是账户版本，不是游戏客户端！使用蓝边账户版本将被永久封禁！</p>
-                        </div>
-                    </div>
+          <!-- 步骤列表 -->
+          <div class="space-y-12">
+            <!-- 步骤 1 -->
+            <div class="relative">
+              <div class="flex items-start">
+                <div
+                  class="flex-shrink-0 w-12 h-12 rounded-full bg-primary flex items-center justify-center text-white font-bold text-xl mr-6"
+                >
+                  1
                 </div>
-
-                <!-- 步骤列表 -->
-                <div class="space-y-12">
-                    <!-- 步骤 1 -->
-                    <div class="relative">
-                        <div class="flex items-start">
-                            <div class="flex-shrink-0 w-12 h-12 rounded-full bg-primary flex items-center justify-center text-white font-bold text-xl mr-6">1</div>
-                            <div class="flex-1">
-                                <h3 class="text-2xl font-semibold mb-4">加入QQ群</h3>
-                                <p class="text-light/70 mb-6">首先需要加入我们的QQ群，获取所有安装所需的资源和详细教程。</p>
-                                <div class="bg-white/5 p-4 rounded-lg">
-                                    <ol class="list-decimal list-inside space-y-2 text-light/80">
-                                        <li class="text-primary font-medium">请先加入QQ群：1034718897</li>
-                                        <li>进群后请先查看<strong>群公告</strong>和<strong>群精华</strong></li>
-                                        <li>如果有任何问题，可以在群内询问群友</li>
-                                    </ol>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="absolute top-12 left-6 h-full w-0.5 bg-primary/30"></div>
-                    </div>
-
-                    <!-- 步骤 2 -->
-                    <div class="relative">
-                        <div class="flex items-start">
-                            <div class="flex-shrink-0 w-12 h-12 rounded-full bg-primary flex items-center justify-center text-white font-bold text-xl mr-6">2</div>
-                            <div class="flex-1">
-                                <h3 class="text-2xl font-semibold mb-4">下载并安装运行库</h3>
-                                <p class="text-light/70 mb-6">在群文件中找到 GRL Package，下载后一键无脑安装。这是补齐所有游戏必备运行库，很多人的电脑缺少运行库所以必须进行这一步。</p>
-                                <div class="bg-white/5 p-4 rounded-lg">
-                                    <ol class="list-decimal list-inside space-y-2 text-light/80">
-                                        <li>进入群文件，找到 GRL Package 文件夹</li>
-                                        <li>下载后运行安装程序</li>
-                                        <li class="text-primary font-medium">一键无脑安装，不要改任何东西，直接无脑点下一步安装</li>
-                                        <li>等待安装完成</li>
-                                    </ol>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="absolute top-12 left-6 h-full w-0.5 bg-primary/30"></div>
-                    </div>
-
-                    <!-- 步骤 3 -->
-                    <div class="relative">
-                        <div class="flex items-start">
-                            <div class="flex-shrink-0 w-12 h-12 rounded-full bg-primary flex items-center justify-center text-white font-bold text-xl mr-6">3</div>
-                            <div class="flex-1">
-                                <h3 class="text-2xl font-semibold mb-4">下载游戏本体</h3>
-                                <p class="text-light/70 mb-6">在群公告里面找到游戏本体链接，下载对应的3.11版本游戏本体。</p>
-                                <div class="bg-white/5 p-4 rounded-lg">
-                                    <ol class="list-decimal list-inside space-y-2 text-light/80">
-                                        <li>在群公告中找到游戏本体下载链接</li>
-                                        <li>下载3.11版本的SPT-AKI游戏本体</li>
-                                        <li>使用Bandizip、Winrar或7ZIP解压（<strong>不要使用Windows系统自带解压功能</strong>）</li>
-                                        <li>解压到您选择的目录，确保游戏路径中<strong>不包含中文</strong></li>
-                                        <li>确保解压完整，不要有任何遗漏文件</li>
-                                    </ol>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="absolute top-12 left-6 h-full w-0.5 bg-primary/30"></div>
-                    </div>
-
-                    <!-- 步骤 4 -->
-                    <div class="relative">
-                        <div class="flex items-start">
-                            <div class="flex-shrink-0 w-12 h-12 rounded-full bg-primary flex items-center justify-center text-white font-bold text-xl mr-6">4</div>
-                            <div class="flex-1">
-                                <h3 class="text-2xl font-semibold mb-4">配置 Astral 连接器 <span class="text-sm bg-yellow-500/80 text-white px-2 py-0.5 rounded ml-2">需进群获取</span></h3>
-                                <p class="text-light/70 mb-6">在群文件中找到"联机必备"文件夹，里面有Astral（稳定连接服务器必备）。<br><span class="text-yellow-400 font-medium">⚠ ASTRAL连接所需所有配置文件均在群文件中，请先加入QQ群获取。</span></p>
-                                <div class="bg-white/5 p-4 rounded-lg">
-                                    <ol class="list-decimal list-inside space-y-2 text-light/80">
-                                        <li>在群文件中找到"联机必备"文件夹</li>
-                                        <li>下载 Astral 文件夹内的配置链接和启动器</li>
-                                        <li>下载 Astral 软件主程序</li>
-                                        <li>打开 Astral 软件，找到右下角的剪贴板图标</li>
-                                        <li>点击剪贴板图标，会弹出一个框让你粘贴配置链接或房间号</li>
-                                        <li>将配置链接粘贴进去，点击确定</li>
-                                        <li>选择房间：<strong>相位剧场（Phase Theater）</strong></li>
-                                        <li>返回 Astral 首页，点击<strong>连接</strong></li>
-                                    </ol>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="absolute top-12 left-6 h-full w-0.5 bg-primary/30"></div>
-                    </div>
-
-                    <!-- 步骤 5 -->
-                    <div class="relative">
-                        <div class="flex items-start">
-                            <div class="flex-shrink-0 w-12 h-12 rounded-full bg-primary flex items-center justify-center text-white font-bold text-xl mr-6">5</div>
-                            <div class="flex-1">
-                                <h3 class="text-2xl font-semibold mb-4">运行 Auto Install</h3>
-                                <p class="text-light/70 mb-6">在群文件中找到3.11文件夹，下载并运行 Auto Install 自动安装工具。</p>
-                                <div class="bg-white/5 p-4 rounded-lg">
-                                    <ol class="list-decimal list-inside space-y-2 text-light/80">
-                                        <li>在群文件中找到3.11文件夹</li>
-                                        <li>下载 Auto Install 自动安装工具</li>
-                                        <li>运行 Auto Install</li>
-                                        <li>按照提示选择游戏根目录（<strong>选择包含 Escape from tarkov.exe 的目录</strong>）</li>
-                                        <li>仔细阅读 EULA 最终用户许可协议</li>
-                                        <li>阅读并保证无误之后点击<strong>同意</strong></li>
-                                        <li>点击<strong>下一步</strong>，一直按下一步走完安装流程</li>
-                                        <li>安装完成后会自动弹出一个启动器</li>
-                                    </ol>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="absolute top-12 left-6 h-full w-0.5 bg-primary/30"></div>
-                    </div>
-
-                    <!-- 步骤 6 -->
-                    <div class="relative">
-                        <div class="flex items-start">
-                            <div class="flex-shrink-0 w-12 h-12 rounded-full bg-primary flex items-center justify-center text-white font-bold text-xl mr-6">6</div>
-                            <div class="flex-1">
-                                <h3 class="text-2xl font-semibold mb-4">配置启动器</h3>
-                                <p class="text-light/70 mb-6">对自动弹出的启动器进行配置。</p>
-                                <div class="bg-white/5 p-4 rounded-lg">
-                                    <ol class="list-decimal list-inside space-y-2 text-light/80">
-                                        <li>启动器弹出后，点击右上角的 <strong>Setting（设置）</strong></li>
-                                        <li>把语言改成<strong>中文</strong></li>
-                                        <li>开启底下的 <strong>Developer Settings（开发者设置）</strong></li>
-                                        <li>在开发者设置中把 URL 地址改成群文件里提供的 URL</li>
-                                        <li>点击右上角的小箭头<strong>返回</strong>主界面</li>
-                                    </ol>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="absolute top-12 left-6 h-full w-0.5 bg-primary/30"></div>
-                    </div>
-
-                    <!-- 步骤 7 -->
-                    <div class="relative">
-                        <div class="flex items-start">
-                            <div class="flex-shrink-0 w-12 h-12 rounded-full bg-primary flex items-center justify-center text-white font-bold text-xl mr-6">7</div>
-                            <div class="flex-1">
-                                <h3 class="text-2xl font-semibold mb-4">创建角色并开始游戏</h3>
-                                <p class="text-light/70 mb-6">完成上述步骤后，连接服务器并创建角色。</p>
-                                <div class="bg-white/5 p-4 rounded-lg">
-                                    <ol class="list-decimal list-inside space-y-2 text-light/80">
-                                        <li>返回启动器首页后，即可开始创建账号并登录</li>
-                                        <li>输入邮箱创建账号</li>
-                                        <li class="text-red-500 font-bold">⚠️ 服务器无密码验证，账号名称将直接决定他人能否登录你的账号！</li>
-                                        <li class="text-red-500 font-bold">⚠️ 请妥善保管你的账号名称，不要告知他人！</li>
-                                        <li class="text-red-500 font-bold">⚠️ 如果发现登录到他人在账号，请自觉登出，并换一个账号名称！</li>
-                                        <li>选择游戏版本（各版本区别可自行搜索 wiki）：
-                                            <ul class="list-disc list-inside ml-6 mt-2 space-y-1">
-                                                <li><strong>Standard</strong> - 对应 Steam 最便宜的版本</li>
-                                                <li><strong>Left Behind / Prepare To Escape</strong> - 不上不下的中间版本</li>
-                                                <li><strong>Edge Of Darkness</strong> - 付费最顶级的体验</li>
-                                            </ul>
-                                        </li>
-                                        <li class="text-red-500 font-bold">⚠️ <strong>注意：严禁选择 Unheard（蓝边）账户版本！蓝边是账户版本，不是游戏客户端！</strong></li>
-                                        <li>选择完成后点击开始游戏即可进入服务器</li>
-                                    </ol>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="flex-1">
+                  <h3 class="text-2xl font-semibold mb-4">加入QQ群</h3>
+                  <p class="text-light/70 mb-6">
+                    首先需要加入我们的QQ群，获取所有安装所需的资源和详细教程。
+                  </p>
+                  <div class="bg-white/5 p-4 rounded-lg">
+                    <ol
+                      class="list-decimal list-inside space-y-2 text-light/80"
+                    >
+                      <li class="text-primary font-medium">
+                        请先加入QQ群：1034718897
+                      </li>
+                      <li>
+                        进群后请先查看<strong>群公告</strong>和<strong
+                          >群精华</strong
+                        >
+                      </li>
+                      <li>如果有任何问题，可以在群内询问群友</li>
+                    </ol>
+                  </div>
                 </div>
-
-                <!-- 常见问题 -->
-                <div class="mt-16">
-                    <h3 class="text-xl font-semibold mb-6">常见问题</h3>
-                    <div class="space-y-4">
-                        <div class="bg-white/5 p-4 rounded-lg">
-                            <h4 class="font-medium text-accent mb-2">无法连接到服务器怎么办？</h4>
-                            <p class="text-light/80">首先确认服务器是否处于开放时间，然后检查您的网络连接和防火墙设置。确保 Astral 已成功连接，URL 地址已正确配置。如果问题依然存在，请尝试联系群管理员寻求帮助。</p>
-                        </div>
-                        <div class="bg-white/5 p-4 rounded-lg">
-                            <h4 class="font-medium text-accent mb-2">游戏版本不兼容怎么办？</h4>
-                            <p class="text-light/80">确保您使用的是 SPT-AKI 3.11 版本，并已正确配置 Astral 连接器和启动器设置。如果仍然无法连接，请检查群公告是否有更新。</p>
-                        </div>
-                        <div class="bg-white/5 p-4 rounded-lg">
-                            <h4 class="font-medium text-accent mb-2">游戏过程中出现卡顿怎么办？</h4>
-                            <p class="text-light/80">确保您的电脑满足最低配置要求，并关闭其他占用系统资源的程序。在服务器人流量较大时，可能会出现轻微卡顿，这是正常现象。</p>
-                        </div>
-                        <div class="bg-white/5 p-4 rounded-lg">
-                            <h4 class="font-medium text-accent mb-2">玩离线版有什么注意事项？</h4>
-                            <p class="text-light/80">1. 不要同时开着线上和离线版一起玩<br>
-                               2. 不要使用修改过的客户端玩逃离塔科夫线上版<br>
-                               3. <strong>如果弹出是否更新mod，请务必选择Continue，否则将会被服务器封禁！！！</strong><br>
-                               <span class="text-red-500 font-bold">封禁！封禁！封禁！重要的事情说三遍！</span><br>
-                               4.如果无法自动SyncMod，请寻找群友帮助<br>
-                               5. <span class="text-red-500 font-bold">严禁在注册时选择 Unheard（蓝边）账户版本！违者一经查处，永久封禁，并挂在群公告置顶公示！</span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="mt-8 p-4 bg-white/5 rounded-lg border border-white/10">
-                    <p class="font-medium text-accent mb-2">参考资料</p>
-                    <ul class="text-light/70 space-y-1 text-sm">
-                        <li><a href="https://escapefromtarkov.fandom.com/wiki/Escape_from_Tarkov_Wiki" target="_blank" class="text-primary hover:underline">Escape from Tarkov Wiki (Fandom)</a> — 游戏百科与机制详解</li>
-                        <li><a href="https://www.sp-tarkov.com/" target="_blank" class="text-primary hover:underline">SPT-AKI 官方网站</a> — SPT离线服务端项目</li>
-                        <li><a href="https://github.com/spt-mods" target="_blank" class="text-primary hover:underline">SPT Mods (GitHub)</a> — 社区模组仓库</li>
-                    </ul>
-                </div>
+              </div>
+              <div
+                class="absolute top-12 left-6 h-full w-0.5 bg-primary/30"
+              ></div>
             </div>
-        </div>
 
-        <div class="max-w-4xl mx-auto bg-glass rounded-xl p-4 border border-white/10 mb-8">
-            <p class="font-medium text-primary mb-2">相关页面</p>
-            <div class="flex flex-wrap gap-4">
-                <a href="../index.html" class="text-light/70 hover:text-primary transition-colors duration-300"><i class="fa fa-home mr-1"></i>EFT Server 首页</a>
-                <a href="guide-beginner-0.16.html" class="text-light/70 hover:text-primary transition-colors duration-300"><i class="fa fa-book mr-1"></i>新手攻略指南</a>
-                <a href="../EULA.html" class="text-light/70 hover:text-primary transition-colors duration-300"><i class="fa fa-file-text mr-1"></i>最终用户许可协议</a>
+            <!-- 步骤 2 -->
+            <div class="relative">
+              <div class="flex items-start">
+                <div
+                  class="flex-shrink-0 w-12 h-12 rounded-full bg-primary flex items-center justify-center text-white font-bold text-xl mr-6"
+                >
+                  2
+                </div>
+                <div class="flex-1">
+                  <h3 class="text-2xl font-semibold mb-4">下载并安装运行库</h3>
+                  <p class="text-light/70 mb-6">
+                    在群文件中找到 GRL
+                    Package，下载后一键无脑安装。这是补齐所有游戏必备运行库，很多人的电脑缺少运行库所以必须进行这一步。
+                  </p>
+                  <div class="bg-white/5 p-4 rounded-lg">
+                    <ol
+                      class="list-decimal list-inside space-y-2 text-light/80"
+                    >
+                      <li>进入群文件，找到 GRL Package 文件夹</li>
+                      <li>下载后运行安装程序</li>
+                      <li class="text-primary font-medium">
+                        一键无脑安装，不要改任何东西，直接无脑点下一步安装
+                      </li>
+                      <li>等待安装完成</li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="absolute top-12 left-6 h-full w-0.5 bg-primary/30"
+              ></div>
             </div>
-        </div>
-        <div class="text-center mt-12">
-            <a href="../index.html" class="inline-flex items-center px-6 py-3 bg-primary text-white rounded-full hover:bg-primary/90 transition-all duration-300">
-                <i class="fa fa-arrow-left mr-2"></i> 返回首页
-            </a>
-        </div>
 
-        <footer class="text-center mt-12 pt-8 border-t border-white/10">
-            <a href="https://github.com/yzy15" class="text-light/50 text-sm">© 2023-2025 Github mc-yzy15 保留所有权利。</a>
-            <span id="update-info" class="text-light/50 text-sm"> | 最后更新: 2026-04-19 | Commit: <a href="https://github.com/mc-yzy15/EFT-Server/commit/379012dd7244923daf3819f7d7e1310e50ee221c" target="_blank" class="hover:text-primary">379012dd</a></span>
-        </footer>
+            <!-- 步骤 3 -->
+            <div class="relative">
+              <div class="flex items-start">
+                <div
+                  class="flex-shrink-0 w-12 h-12 rounded-full bg-primary flex items-center justify-center text-white font-bold text-xl mr-6"
+                >
+                  3
+                </div>
+                <div class="flex-1">
+                  <h3 class="text-2xl font-semibold mb-4">下载游戏本体</h3>
+                  <p class="text-light/70 mb-6">
+                    在群公告里面找到游戏本体链接，下载对应的3.11版本游戏本体。
+                  </p>
+                  <div class="bg-white/5 p-4 rounded-lg">
+                    <ol
+                      class="list-decimal list-inside space-y-2 text-light/80"
+                    >
+                      <li>在群公告中找到游戏本体下载链接</li>
+                      <li>下载3.11版本的SPT-AKI游戏本体</li>
+                      <li>
+                        使用Bandizip、Winrar或7ZIP解压（<strong>不要使用Windows系统自带解压功能</strong>）
+                      </li>
+                      <li>
+                        解压到您选择的目录，确保游戏路径中<strong
+                          >不包含中文</strong
+                        >
+                      </li>
+                      <li>确保解压完整，不要有任何遗漏文件</li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="absolute top-12 left-6 h-full w-0.5 bg-primary/30"
+              ></div>
+            </div>
+
+            <!-- 步骤 4 -->
+            <div class="relative">
+              <div class="flex items-start">
+                <div
+                  class="flex-shrink-0 w-12 h-12 rounded-full bg-primary flex items-center justify-center text-white font-bold text-xl mr-6"
+                >
+                  4
+                </div>
+                <div class="flex-1">
+                  <h3 class="text-2xl font-semibold mb-4">
+                    配置 Astral 连接器
+                    <span
+                      class="text-sm bg-yellow-500/80 text-white px-2 py-0.5 rounded ml-2"
+                      >需进群获取</span
+                    >
+                  </h3>
+                  <p class="text-light/70 mb-6">
+                    在群文件中找到"联机必备"文件夹，里面有Astral（稳定连接服务器必备）。<br /><span
+                      class="text-yellow-400 font-medium"
+                      >⚠
+                      ASTRAL连接所需所有配置文件均在群文件中，请先加入QQ群获取。</span
+                    >
+                  </p>
+                  <div class="bg-white/5 p-4 rounded-lg">
+                    <ol
+                      class="list-decimal list-inside space-y-2 text-light/80"
+                    >
+                      <li>在群文件中找到"联机必备"文件夹</li>
+                      <li>下载 Astral 文件夹内的配置链接和启动器</li>
+                      <li>下载 Astral 软件主程序</li>
+                      <li>打开 Astral 软件，找到右下角的剪贴板图标</li>
+                      <li>
+                        点击剪贴板图标，会弹出一个框让你粘贴配置链接或房间号
+                      </li>
+                      <li>将配置链接粘贴进去，点击确定</li>
+                      <li>
+                        选择房间：<strong>相位剧场（Phase Theater）</strong>
+                      </li>
+                      <li>返回 Astral 首页，点击<strong>连接</strong></li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="absolute top-12 left-6 h-full w-0.5 bg-primary/30"
+              ></div>
+            </div>
+
+            <!-- 步骤 5 -->
+            <div class="relative">
+              <div class="flex items-start">
+                <div
+                  class="flex-shrink-0 w-12 h-12 rounded-full bg-primary flex items-center justify-center text-white font-bold text-xl mr-6"
+                >
+                  5
+                </div>
+                <div class="flex-1">
+                  <h3 class="text-2xl font-semibold mb-4">运行 Auto Install</h3>
+                  <p class="text-light/70 mb-6">
+                    在群文件中找到3.11文件夹，下载并运行 Auto Install
+                    自动安装工具。
+                  </p>
+                  <div class="bg-white/5 p-4 rounded-lg">
+                    <ol
+                      class="list-decimal list-inside space-y-2 text-light/80"
+                    >
+                      <li>在群文件中找到3.11文件夹</li>
+                      <li>下载 Auto Install 自动安装工具</li>
+                      <li>运行 Auto Install</li>
+                      <li>
+                        按照提示选择游戏根目录（<strong
+                          >选择包含 Escape from tarkov.exe 的目录</strong
+                        >）
+                      </li>
+                      <li>仔细阅读 EULA 最终用户许可协议</li>
+                      <li>阅读并保证无误之后点击<strong>同意</strong></li>
+                      <li>
+                        点击<strong>下一步</strong>，一直按下一步走完安装流程
+                      </li>
+                      <li>安装完成后会自动弹出一个启动器</li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="absolute top-12 left-6 h-full w-0.5 bg-primary/30"
+              ></div>
+            </div>
+
+            <!-- 步骤 6 -->
+            <div class="relative">
+              <div class="flex items-start">
+                <div
+                  class="flex-shrink-0 w-12 h-12 rounded-full bg-primary flex items-center justify-center text-white font-bold text-xl mr-6"
+                >
+                  6
+                </div>
+                <div class="flex-1">
+                  <h3 class="text-2xl font-semibold mb-4">配置启动器</h3>
+                  <p class="text-light/70 mb-6">对自动弹出的启动器进行配置。</p>
+                  <div class="bg-white/5 p-4 rounded-lg">
+                    <ol
+                      class="list-decimal list-inside space-y-2 text-light/80"
+                    >
+                      <li>
+                        启动器弹出后，点击右上角的
+                        <strong>Setting（设置）</strong>
+                      </li>
+                      <li>把语言改成<strong>中文</strong></li>
+                      <li>
+                        开启底下的
+                        <strong>Developer Settings（开发者设置）</strong>
+                      </li>
+                      <li>在开发者设置中把 URL 地址改成群文件里提供的 URL</li>
+                      <li>点击右上角的小箭头<strong>返回</strong>主界面</li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="absolute top-12 left-6 h-full w-0.5 bg-primary/30"
+              ></div>
+            </div>
+
+            <!-- 步骤 7 -->
+            <div class="relative">
+              <div class="flex items-start">
+                <div
+                  class="flex-shrink-0 w-12 h-12 rounded-full bg-primary flex items-center justify-center text-white font-bold text-xl mr-6"
+                >
+                  7
+                </div>
+                <div class="flex-1">
+                  <h3 class="text-2xl font-semibold mb-4">
+                    创建角色并开始游戏
+                  </h3>
+                  <p class="text-light/70 mb-6">
+                    完成上述步骤后，连接服务器并创建角色。
+                  </p>
+                  <div class="bg-white/5 p-4 rounded-lg">
+                    <ol
+                      class="list-decimal list-inside space-y-2 text-light/80"
+                    >
+                      <li>返回启动器首页后，即可开始创建账号并登录</li>
+                      <li>输入邮箱创建账号</li>
+                      <li class="text-red-500 font-bold">
+                        ⚠️
+                        服务器无密码验证，账号名称将直接决定他人能否登录你的账号！
+                      </li>
+                      <li class="text-red-500 font-bold">
+                        ⚠️ 请妥善保管你的账号名称，不要告知他人！
+                      </li>
+                      <li class="text-red-500 font-bold">
+                        ⚠️
+                        如果发现登录到他人在账号，请自觉登出，并换一个账号名称！
+                      </li>
+                      <li>
+                        选择游戏版本（各版本区别可自行搜索 wiki）：
+                        <ul class="list-disc list-inside ml-6 mt-2 space-y-1">
+                          <li>
+                            <strong>Standard</strong> - 对应 Steam 最便宜的版本
+                          </li>
+                          <li>
+                            <strong>Left Behind / Prepare To Escape</strong> -
+                            不上不下的中间版本
+                          </li>
+                          <li>
+                            <strong>Edge Of Darkness</strong> - 付费最顶级的体验
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="text-red-500 font-bold">
+                        ⚠️
+                        <strong
+                          >注意：严禁选择
+                          Unheard（蓝边）账户版本！蓝边是账户版本，不是游戏客户端！</strong
+                        >
+                      </li>
+                      <li>选择完成后点击开始游戏即可进入服务器</li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 常见问题 -->
+          <div class="mt-16">
+            <h3 class="text-xl font-semibold mb-6">常见问题</h3>
+            <div class="space-y-4">
+              <div class="bg-white/5 p-4 rounded-lg">
+                <h4 class="font-medium text-accent mb-2">
+                  无法连接到服务器怎么办？
+                </h4>
+                <p class="text-light/80">
+                  首先确认服务器是否处于开放时间，然后检查您的网络连接和防火墙设置。确保
+                  Astral 已成功连接，URL
+                  地址已正确配置。如果问题依然存在，请尝试联系群管理员寻求帮助。
+                </p>
+              </div>
+              <div class="bg-white/5 p-4 rounded-lg">
+                <h4 class="font-medium text-accent mb-2">
+                  游戏版本不兼容怎么办？
+                </h4>
+                <p class="text-light/80">
+                  确保您使用的是 SPT-AKI 3.11 版本，并已正确配置 Astral
+                  连接器和启动器设置。如果仍然无法连接，请检查群公告是否有更新。
+                </p>
+              </div>
+              <div class="bg-white/5 p-4 rounded-lg">
+                <h4 class="font-medium text-accent mb-2">
+                  游戏过程中出现卡顿怎么办？
+                </h4>
+                <p class="text-light/80">
+                  确保您的电脑满足最低配置要求，并关闭其他占用系统资源的程序。在服务器人流量较大时，可能会出现轻微卡顿，这是正常现象。
+                </p>
+              </div>
+              <div class="bg-white/5 p-4 rounded-lg">
+                <h4 class="font-medium text-accent mb-2">
+                  玩离线版有什么注意事项？
+                </h4>
+                <p class="text-light/80">
+                  1. 不要同时开着线上和离线版一起玩<br />
+                  2. 不要使用修改过的客户端玩逃离塔科夫线上版<br />
+                  3.
+                  <strong
+                    >如果弹出是否更新mod，请务必选择Continue，否则将会被服务器封禁！！！</strong
+                  ><br />
+                  <span class="text-red-500 font-bold"
+                    >封禁！封禁！封禁！重要的事情说三遍！</span
+                  ><br />
+                  4.如果无法自动SyncMod，请寻找群友帮助<br />
+                  5.
+                  <span class="text-red-500 font-bold"
+                    >严禁在注册时选择
+                    Unheard（蓝边）账户版本！违者一经查处，永久封禁，并挂在群公告置顶公示！</span
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="mt-8 p-4 bg-white/5 rounded-lg border border-white/10">
+            <p class="font-medium text-accent mb-2">参考资料</p>
+            <ul class="text-light/70 space-y-1 text-sm">
+              <li>
+                <a
+                  href="https://escapefromtarkov.fandom.com/wiki/Escape_from_Tarkov_Wiki"
+                  target="_blank"
+                  class="text-primary hover:underline"
+                  >Escape from Tarkov Wiki (Fandom)</a
+                >
+                — 游戏百科与机制详解
+              </li>
+              <li>
+                <a
+                  href="https://www.sp-tarkov.com/"
+                  target="_blank"
+                  class="text-primary hover:underline"
+                  >SPT-AKI 官方网站</a
+                >
+                — SPT离线服务端项目
+              </li>
+              <li>
+                <a
+                  href="https://github.com/spt-mods"
+                  target="_blank"
+                  class="text-primary hover:underline"
+                  >SPT Mods (GitHub)</a
+                >
+                — 社区模组仓库
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="max-w-4xl mx-auto bg-glass rounded-xl p-4 border border-white/10 mb-8"
+      >
+        <p class="font-medium text-primary mb-2">相关页面</p>
+        <div class="flex flex-wrap gap-4">
+          <a
+            href="../index.html"
+            class="text-light/70 hover:text-primary transition-colors duration-300"
+            ><i class="fa fa-home mr-1"></i>EFT Server 首页</a
+          >
+          <a
+            href="guide-beginner-0.16.html"
+            class="text-light/70 hover:text-primary transition-colors duration-300"
+            ><i class="fa fa-book mr-1"></i>新手攻略指南</a
+          >
+          <a
+            href="../EULA.html"
+            class="text-light/70 hover:text-primary transition-colors duration-300"
+            ><i class="fa fa-file-text mr-1"></i>最终用户许可协议</a
+          >
+        </div>
+      </div>
+      <div class="text-center mt-12">
+        <a
+          href="../index.html"
+          class="inline-flex items-center px-6 py-3 bg-primary text-white rounded-full hover:bg-primary/90 transition-all duration-300"
+        >
+          <i class="fa fa-arrow-left mr-2"></i> 返回首页
+        </a>
+      </div>
+
+      <footer class="text-center mt-12 pt-8 border-t border-white/10">
+        <a href="https://github.com/yzy15" class="text-light/50 text-sm"
+          >© 2023-2025 Github mc-yzy15 保留所有权利。</a
+        >
+        <span id="update-info" class="text-light/50 text-sm">
+          | 最后更新: 2026-04-19 | Commit:
+          <a
+            href="https://github.com/mc-yzy15/EFT-Server/commit/379012dd7244923daf3819f7d7e1310e50ee221c"
+            target="_blank"
+            class="hover:text-primary"
+            >379012dd</a
+          ></span
+        >
+      </footer>
     </div>
-</body>
+  </body>
 </html>
