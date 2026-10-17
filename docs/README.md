@@ -31,8 +31,8 @@ YZY社区服提供三种连接地址，优先使用公网主地址。
 
 1. 下载并解压 [EasyTier 官方安装包](https://github.com/EasyTier/EasyTier/releases)（Windows 选 GUI 图形版，解压即用）
 2. 下载本服配置文件 `easytier/Eft-yzy.toml`
-3. 用记事本打开配置，删除 `instance_id` 那一整行（服务器本机编号，每个人都不同，删掉后软件自动生成）
-4. 其余内容不要改动，保存为 `config.toml`
+3. 配置文件已预处理好，`instance_id` 已留空，软件会自动为你生成专属编号，**无需手动修改**
+4. 保存为 `config.toml`
 5. 启动 EasyTier，选择「使用自定义配置文件」并选中该文件，点击启动
 6. 防火墙弹窗选择「允许访问」，等待连接成功显示内网IP
 7. 使用上面的内网地址进入服务器
